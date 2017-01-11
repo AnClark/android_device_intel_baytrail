@@ -84,8 +84,7 @@ TARGET_CAMERA_PIXEL_FORMAT := HAL_PIXEL_FORMAT_YCbCr_422_I
 
 BOARD_SEPOLICY_DIRS :=\
         device/intel/baytrail/sepolicy
-BOARD_SEPOLICY_REPLACE := \
-        domain.te
+
 BOARD_SEPOLICY_UNION :=\
         adbd.te \
         apk_logfs.te \
@@ -138,3 +137,6 @@ BOARD_SEPOLICY_UNION :=\
 
 # DRM Protected Video
 BOARD_WIDEVINE_OEMCRYPTO_LEVEL := 1
+
+# TWRP specified parameters
+TW_THEME := portrait_hdpi
